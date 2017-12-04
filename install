@@ -1,8 +1,14 @@
 #install yad
 
 #Ubuntu
+sudo apt install  yad
+
+
 #Fedora
+dnf install yad
+
 #Arch Linux
+yaourt -S yad
 
 sudo mkdir /opt/gp
 
