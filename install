@@ -5,8 +5,8 @@ wget https://raw.githubusercontent.com/ferreirarocha/gnome-perfil/master/gp.zip
 unzip gp.zip
 
 sudo mv gp/gnome-perfil /opt/gp
-sudo mv gp/gparfil.svg /opt/gp
+sudo mv gp/gperfil.svg /opt/gp
 mkdir ~/.config/gnome-perfil
 
-mv gp/gnomeperfil.desktop ./local/share/applications/gnomeperfil.desktop
+mv gp/gnomeperfil.desktop .local/share/applications/gnomeperfil.desktop
 
