@@ -1,8 +1,8 @@
 sudo mkdir /opt/gp
 
-wget link
+wget https://raw.githubusercontent.com/ferreirarocha/gnome-perfil/master/gp.zip
 
-tar xfz gp.tgz
+unzip gp.zip
 
 sudo mv gp/gnome-perfil /opt/gp
 sudo mv gp/gparfil.svg /opt/gp
