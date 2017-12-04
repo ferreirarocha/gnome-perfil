@@ -2,9 +2,9 @@
 Version=1.0
 Name=Gnome Perfil
 Comment=Official desktop version of Telegram messaging app
-TryExec=/opt/gnome-perfil/gnome-perfil
-Exec=/opt/gnome-perfil/gnome-perfil -- %u
-Icon=/opt/gnome-perfil/gperfil.svg
+TryExec=/opt/gperfil/gnome-perfil
+Exec=/opt/gperfil/gnome-perfil -- %u
+Icon=/opt/gperfil/gperfil.svg
 Terminal=false
 Type=Application
 Categories=Network;InstantMessaging;Qt;
