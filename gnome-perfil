@@ -1,0 +1,46 @@
+#/bin/bash
+# Autor Marcos Ferrerira da Rocha
+# Email = marcos.fr.rocha@gmail.com
+# https://alfabech.com
+# O Gnome Perfil cria e alterna e cria facilmente entres  os  perfis criados  atraves do dconf dump e dconf load.
+
+
+yad --title="Gnome Perfil" --text="
+Com o gnome perfil você pode  facilmente salvar  e alternar ou  restaurar as suas 
+configurações de  interface do Gnome.
+
+Escolha a opção
+
+" --width=400 --height=100 --center \
+--button=gtk-cancel:1 \
+--button="Novo Perfil":2 \
+--button="Alterar Perfil":3 \
+--button="Padrão":4
+
+opcao=$?
+
+[[ $opcao -eq 1 ]] && exit 0
+
+if [[ $opcao -eq 2 ]]; then
+##Novo Perfil
+novoprefil=$(yad --title "Criar Perfil" --width=600 --height=100 --center --entry --text "Insira o nome do novo perfil")
+dconf dump /org/gnome/ > ~/.config/gnome-perfil/$novoprefil
+exit $(yad --title="Carregar Perfil"   --width=600 --height=200 --center --text="Seu perfil foi salvo como  "$novoprefil) 
+#&& exit 0
+
+elif [[ $opcao -eq 3 ]]; then
+lista=$(ls  ~/.config/gnome-perfil)
+perfil=$(yad --title="Gnome Perfil" --width=600 --height=400 --center  \
+--list --column="Perfis" --separator="" $lista)
+## Carregar Perfil
+dconf load /org/gnome/ < $perfil
+exit $(yad --title="Carregar Perfil"   --width=600 --height=200 --center --text="Seu perfil foi alterado para "$perfil) 
+#&& exit 0
+
+else
+## Restautar  Perfil Padrão
+dconf reset -f /org/gnome/
+#&& exit 0
+fi
+
+

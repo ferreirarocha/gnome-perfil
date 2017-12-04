@@ -1,12 +1,12 @@
 sudo mkdir /opt/gp
 
-wget https://raw.githubusercontent.com/ferreirarocha/gnome-perfil/master/gp.zip
+wget link
 
 unzip gp.zip
 
 sudo mv gp/gnome-perfil /opt/gp
-sudo mv gp/gperfil.svg /opt/gp
+sudo mv gp/gparfil.svg /opt/gp
 mkdir ~/.config/gnome-perfil
 
-mv gp/gnomeperfil.desktop .local/share/applications/gnomeperfil.desktop
+sudo mv gp/gnome-perfil-desktop /usr/share/applications/gnome-perfil.desktop
 
