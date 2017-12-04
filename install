@@ -1,3 +1,9 @@
+#install yad
+
+#Ubuntu
+#Fedora
+#Arch Linux
+
 sudo mkdir /opt/gp
 
 wget https://github.com/ferreirarocha/gnome-perfil/archive/master.zip
