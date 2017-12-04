@@ -4,5 +4,5 @@ Terminal=false
 Name=Gnome Perfil
 Exec=sh /opt/gp/gnome-perfil
 Type=Application
-Icon=/opt/gperfil/gperfil.svg
+Icon=/opt/gp/gperfil.svg
 
