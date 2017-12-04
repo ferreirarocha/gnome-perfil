@@ -1,0 +1,12 @@
+sudo mkdir /opt/gp
+
+wget link
+
+tar xfz gp.tgz
+
+sudo mv gp/gnome-perfil /opt/gp
+sudo mv gp/gparfil.svg /opt/gp
+mkdir ~/.config/gnome-perfil
+
+sudo mv gp/gnome-perfil-desktop /usr/share/applications/gnome-perfil.desktop
+
