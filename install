@@ -1,11 +1,11 @@
-sudo mkdir /opt/gnome-perfil
+sudo mkdir /opt/gp
 
 wget https://github.com/ferreirarocha/gnome-perfil/archive/master.zip
 
 unzip master.zip
 
-sudo mv gnome-perfil-master/gnome-perfil /opt/gnome-perfil/
-sudo mv gnome-perfil-master/gperfil.svg /opt/gnome-perfil/
+sudo mv gnome-perfil-master/gnome-perfil /opt/gp/
+sudo mv gnome-perfil-master/gperfil.svg /opt/gp/
 mkdir ~/.config/gnome-perfil
 
 mv gnome-perfil-master/gnomeperfil.desktop .local/share/applications/gnomeperfil.desktop
