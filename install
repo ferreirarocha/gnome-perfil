@@ -8,4 +8,4 @@ sudo mv gnome-perfil-master/gnome-perfil /opt/gnome-perfil/
 sudo mv gnome-perfil-master/gperfil.svg /opt/gnome-perfil/
 mkdir ~/.config/gnome-perfil
 
-sudo mv gnome-perfil-master/gnomeperfil.desktop .local/share/applications/gnomeperfil.desktop
+mv gnome-perfil-master/gnomeperfil.desktop .local/share/applications/gnomeperfil.desktop
