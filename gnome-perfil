@@ -33,7 +33,7 @@ lista=$(ls  ~/.config/gnome-perfil)
 perfil=$(yad --title="Gnome Perfil" --width=600 --height=400 --center  \
 --list --column="Perfis" --separator="" $lista)
 ## Carregar Perfil
-dconf load /org/gnome/ < $perfil
+dconf load /org/gnome/ < ~/.config/gnome-perfil/$perfil
 exit $(yad --title="Carregar Perfil"   --width=600 --height=200 --center --text="Seu perfil foi alterado para "$perfil) 
 #&& exit 0
 
